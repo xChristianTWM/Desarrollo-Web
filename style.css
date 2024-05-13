@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: black;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-items {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-brands {
+    display: flex;
+    align-items: center; /* Alinear los elementos verticalmente */
+}
+
+.nav-brands div {
+    margin-right: 30px; /* Añadir margen entre los elementos */
+}
+
+.nav-brands img {
+    height: 18px; /* Reducir la altura de las imágenes */
+    width: auto;
+}
+/** AJUSTE DE TAMAÑOS DE LOGOS **/
+.nav-brands img[alt="asus"] {
+    height: 14px;
+}
+
+.nav-brands img[alt="aorus"] {
+    height: 42px;
+}
+.nav-brands img[alt="nvidia"] {
+    height: 25px;
+}
+
+/** --------------------------- **/
+
+.nav-text {
+    display: flex; /* Para que los elementos se distribuyan horizontalmente */
+    align-items: center; /* Para alinear verticalmente los elementos */
+    margin-left: auto; /* Para que los elementos se ubiquen al final */
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.separacion{
+    padding: 10px;
+}
+
+.nav-text > div {
+    display: flex; /* Para que los elementos dentro de nav-text se distribuyan horizontalmente */
+    align-items: center; /* Para alinear verticalmente los elementos dentro de los div */
+    margin-right: 2px; /* Añadir margen entre los elementos */
+}
+
+.nav-text img {
+    height: 18px; /* Ajustar la altura de las imágenes */
+    width: auto; /* Ajustar automáticamente el ancho de las imágenes */
+    margin-right: 2px; /* Añadir margen a la derecha de las imágenes */
+}
+
+.nav-text img[alt="phone"] {
+    height: 14px;
+}
