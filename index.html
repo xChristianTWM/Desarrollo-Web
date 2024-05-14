@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/slider-def.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,6 +13,15 @@
     <title>NextMasterRace</title>
 </head>
 <body>
+
+    <div class="gradient-background__wrapper">
+		<div class="gradient-background">
+			<div class="gradient-background__shape gradient-background__shape--1"></div>
+			<div class="gradient-background__shape gradient-background__shape--2"></div>
+		</div>
+		<div class="gradient-background__noise"></div>
+	</div>
+
     <div class="top-bar">
         <div class="container">
             <div class="top-items">
@@ -67,6 +77,7 @@
             </div>
         </div>
     </div>
+
     <div class="menu-bar">
         <p class="menu">Inicio</p>
         <p class="menu">Armá tu PC</p>
@@ -77,13 +88,51 @@
         <p class="menu">Monitores</p>
     </div>
 
-    <div class="aux">
-        <div class="wrapper">
-            <img src="assests/slides/1.png" class="slider">
-            <img src="assests/slides/2.png" class="slider">
-            <img src="assests/slides/3.png" class="slider">
-            <img src="assests/slides/4.png" class="slider">
-            <img src="assests/slides/1.png" class="slider">
+
+    <div id="slider">
+        <div class="slides">
+          <!-- First slide -->
+          <div class="slider">
+            <div class="images">
+              <img src="assests/slides/1.png">
+            </div>
+          </div>
+          <!-- Second slide -->
+          <div class="slider">
+            <div class="images">
+              <img src="assests/slides/2.png">
+            </div>
+          </div>
+          <!-- Third slide -->
+          <div class="slider">
+            <div class="images">
+              <img src="assests/slides/3.png">
+            </div>
+          </div>
+          <!-- Fourth slide -->
+          <div class="slider">
+            <div class="images">
+              <img src="assests/slides/4.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="text-destacado">
+        <h2>Destacados</h2>
+    </div>
+
+
+    <div class="container-product">
+        <div class="container-card">
+            <div class="product">
+                <div class="image">
+                    <img src="assests/productos/ram.png" alt="">
+                </div>
+                <h3>MEMORIA 16GB (2X8) DDR4 3200 GSKILL TRIDENT Z RGB NEO</h3>
+                <div class="price">$500.000</div>
+                <div class="wallet">Agregar</div>
+            </div>
         </div>
     </div>
     

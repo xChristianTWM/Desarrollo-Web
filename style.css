@@ -102,6 +102,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     z-index: 9999;
+    padding: 10px;
 }
 
 .menu {
@@ -113,42 +114,65 @@ body {
     cursor: pointer;
 }
 
-.aux{
-    overflow: hidden;
+.text-destacado{
+    padding: 40px;
+    font-family: 'Manrope';
+    font-size: 15px;
+    color: white;
 }
-.wrapper{
-    width: 100%;
-    display: flex;
-    animation: slide 10s infinite;
-    max-width: 1200px; /* Ancho máximo para el carrusel */
-}
-@keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-}
-.slider{
-    width: 100%;
 
+.container-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.product {
+    padding: 20px;
+}
+
+.image{
+    height: auto;
+    width: 10px;
+}
+
+.image img {
+    width: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.price {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.wallet {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wallet:hover {
+    background-color: #0056b3;
 }
