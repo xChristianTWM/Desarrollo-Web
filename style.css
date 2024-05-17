@@ -121,67 +121,59 @@ body {
     color: white;
 }
 
-.container-product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.container-cards{
+
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    grid-auto-rows: 300px;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
 
 }
 
-.container-card {
+.cards{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 300px;
-    height: 400px;
-    margin-right: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    cursor: pointer;
 }
 
-.product {
-    padding: 20px;
-}
-
-.image{
+.cards img{
+    width: 120px;
     height: auto;
-    width: 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
-.image img {
-    width: 200px;
-    border-radius: 10px 10px 0 0;
+.descripcion, .price{
+    padding: 20px;
+    text-align: center;
+}
+
+.price{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    height: 5px;
+    width: 100px;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-}
-
-h3 {
-    margin-top: 10px;
-    font-size: 15px;
-    color: white;
-}
-
-.price {
-    margin-top: 30px;
     text-align: center;
-    font-size: 1.25rem;
-    color: #007bff;
-}
+    justify-content: center;
 
-.wallet {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 25px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 40px;
-}
-
-.wallet:hover {
-    background-color: #0056b3;
+    margin: auto;
 }
