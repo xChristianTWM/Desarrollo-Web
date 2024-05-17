@@ -136,6 +136,9 @@ body {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
 }
 
 .product {
@@ -150,15 +153,20 @@ body {
 .image img {
     width: 200px;
     border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 h3 {
     margin-top: 10px;
     font-size: 15px;
-    color: #333;
+    color: white;
 }
 
 .price {
+    margin-top: 30px;
+    text-align: center;
     font-size: 1.25rem;
     color: #007bff;
 }
@@ -171,6 +179,7 @@ h3 {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 40px;
 }
 
 .wallet:hover {
