@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style/slider-def.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <div class="gradient-background__wrapper">
+  <div class="gradient-background__wrapper">
 		<div class="gradient-background">
 			<div class="gradient-background__shape gradient-background__shape--1"></div>
 			<div class="gradient-background__shape gradient-background__shape--2"></div>
@@ -22,136 +22,85 @@
 		<div class="gradient-background__noise"></div>
 	</div>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-items">
-                <div class="nav-brands">
-                    <div>
-                        <img src="assests/marcas/intel.png" alt="intel">
-                    </div>
-                    <div>
-                        <img src="assests/marcas/amd.png" alt="amd">
-                    </div>
-                    <div>
-                        <img src="assests/marcas/asus.png" alt="asus">
-                    </div>
-                    <div>
-                        <img src="assests/marcas/corsair.png" alt="corsair">
-                    </div>
-                    <div>
-                        <img src="assests/marcas/aorus.png" alt="aorus">
-                    </div>
-                    <div>
-                        <img src="assests/marcas/nvidia.png" alt="nvidia">
-                    </div>
-                    <div>
-                        <img src="assests/marcas/seagate.png" alt="seagate">
-                    </div>
-                </div>
-                <div class="nav-text">
-                    <div>
-                        <img src="assests/iconos/phone.png" alt="phone">
-                    </div>
-                    <div>
-                        1122334455
-                    </div>
-                    <div class="separacion">
-                        /
-                    </div>
-                    <div>
-                        <img src="assests/iconos/mail.png" alt="mail">
-                    </div>
-                    <div>
-                        correo@mail.com
-                    </div>
-                    <div class="separacion">
-                        /
-                    </div>
-                    <div>
-                        <img src="assests/iconos/contacto.png" alt="contacto">
-                    </div>
-                    <div>
-                        contacto
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="menu-bar">
+    <div class="container-bar">
+      <p class="menu">Inicio</p>
+      <p class="menu">Armá tu PC</p>
+      <p class="menu">PC Armadas</p>
+      <p class="menu">Hardware</p>
+      <p class="menu">Periféricos</p>
+      <p class="menu">Notebooks</p>
+      <p class="menu">Monitores</p>
     </div>
-
-    <div class="menu-bar">
-        <p class="menu">Inicio</p>
-        <p class="menu">Armá tu PC</p>
-        <p class="menu">PC Armadas</p>
-        <p class="menu">Hardware</p>
-        <p class="menu">Periféricos</p>
-        <p class="menu">Notebooks</p>
-        <p class="menu">Monitores</p>
-    </div>
+  </div>
 
 
-    <div id="slider">
-        <div class="slides">
-          <!-- First slide -->
-          <div class="slider">
-            <div class="images">
-              <img src="assests/slides/1.png">
+    <!-- Carousel -->
+    <section class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assests/slides/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/assests/slides/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/assests/slides/3.png" class="d-block w-100" alt="...">
             </div>
           </div>
-          <!-- Second slide -->
-          <div class="slider">
-            <div class="images">
-              <img src="assests/slides/2.png">
-            </div>
-          </div>
-          <!-- Third slide -->
-          <div class="slider">
-            <div class="images">
-              <img src="assests/slides/3.png">
-            </div>
-          </div>
-          <!-- Fourth slide -->
-          <div class="slider">
-            <div class="images">
-              <img src="assests/slides/4.png">
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
+  </section>
 
     <div class="text-destacado">
         <h2>Destacados</h2>
     </div>
 
-    <section class="container-cards">
-        <div class="cards">
-            <div>
-                <img src="assests/productos/mouse.png" alt="mouse">
-            </div>
-            <div class="descripcion">MOUSE LOGITECH G502 GAMING HERO 910-005550</div>
-            <div class="price">Precio</div>
-        </div>
-        <div class="cards">
-            <img src="assests/productos/ram.png" alt="ram">
-        </div>
-        <div class="cards">
-            <img src="assests/productos/gabinete.png" alt="gabinete">
-        </div>
-        <div class="cards">
-            <img src="assests/productos/microfono.png" alt="microfono">
-        </div>
-        <div class="cards">
-            <img src="assests/productos/placa-video.png" alt="placa-video">
-        </div>
-        <div class="cards">
-            <img src="assests/productos/teclado.png" alt="teclado">
-        </div>
-        <div class="cards">
-            <img src="assests/productos/monitor.png" alt="monitor">
-        </div>
-        <div class="cards">
-            <img src="assests/productos/auris.png" alt="auris">
-        </div>
-    </section>
+  <section class="container-cards">
+    <div class="cards">
+      <div>
+        <img src="assests/productos/mouse.png" alt="mouse">
+      </div>
+      <div class="descripcion">MOUSE LOGITECH G502 GAMING HERO 910-005550</div>
+      <div class="price">Precio</div>
+    </div>
+    <div class="cards">
+      <img src="assests/productos/ram.png" alt="ram">
+    </div>
+    <div class="cards">
+      <img src="assests/productos/gabinete.png" alt="gabinete">
+    </div>
+    <div class="cards">
+      <img src="assests/productos/microfono.png" alt="microfono">
+    </div>
+    <div class="cards">
+      <img src="assests/productos/placa-video.png" alt="placa-video">
+    </div>
+    <div class="cards">
+      <img src="assests/productos/teclado.png" alt="teclado">
+    </div>
+    <div class="cards">
+      <img src="assests/productos/monitor.png" alt="monitor">
+    </div>
+    <div class="cards">
+      <img src="assests/productos/auris.png" alt="auris">
+    </div>
+  </section>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
