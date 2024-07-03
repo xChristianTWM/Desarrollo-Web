@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"> <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="../style/lista-productos.css"> <!-- Archivo CSS específico para la página de notebooks -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+    <title>NextMasterRace - PC Armadas</title>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="container-bar">
+            <a href="../index.html">Inicio</a>
+            <a href="armar.html">Armá tu PC</a>
+            <a href="pcarmada.html">PC Armadas</a>
+            <a href="hardware.html">Hardware</a>
+            <a href="perifericos.html">Periféricos</a>
+            <a href="notebooks.html">Notebooks</a>
+            <a href="monitores.html">Monitores</a>
+        </div>
+    </div>
+
+    <section>
+        <ol class="container-list">
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/pcarmada-productos/D_NQ_NP_602806-MLA76772370873_062024-O.png" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Pc Armada Gamer Amd Ryzen 5 4600g 16gb Ram Ssd 500gb Ver2.0
+                    </div>
+                    <div class="price-notebook">
+                        $536.759
+                    </div>
+                </div>
+            </li>
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/pcarmada-productos/D_NQ_NP_979366-MLA77225468682_072024-O.png" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Pc Armada Gamer Amd Ryzen 3 3200g 16gb Ram 1tb Ssd
+                    </div>
+                    <div class="price-notebook">
+                        $429.999
+                    </div>
+                </div>
+            </li>
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/pcarmada-productos/D_NQ_NP_845797-MLA76371806148_052024-O.png" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Pc Armada Gamer Amd Ryzen 7 5700g/32gb Rgb/1tbssd/wifi/win10
+                    </div>
+                    <div class="price-notebook">
+                        $1.045.000
+                    </div>
+                </div>
+            </li>
+            
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/pcarmada-productos/D_NQ_NP_643509-MLA75371068291_032024-O.png" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Pc Gamer Ryzen 7 5700g Rtx 3060 12gb 32gb Vega 8 960gb Wifi
+                    </div>
+                    <div class="price-notebook">
+                        $1.470.000
+                    </div>
+                </div>
+            </li>
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/pcarmada-productos/D_NQ_NP_623185-MLA71830679784_092023-O.png" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Pc Armada Gamer Amd Ryzen 7 5700g Ram 32gb 1tb Ssd Wifi
+                    </div>
+                    <div class="price-notebook">
+                        $967.999
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menuBar = document.querySelector('.container-bar');
+            menuBar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

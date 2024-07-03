@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"> <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="../style/lista-productos.css"> <!-- Archivo CSS específico para la página de notebooks -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+    <title>NextMasterRace - Periféricos</title>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="container-bar">
+            <a href="../index.html">Inicio</a>
+            <a href="armar.html">Armá tu PC</a>
+            <a href="pcarmada.html">PC Armadas</a>
+            <a href="hardware.html">Hardware</a>
+            <a href="perifericos.html">Periféricos</a>
+            <a href="notebooks.html">Notebooks</a>
+            <a href="monitores.html">Monitores</a>
+        </div>
+    </div>
+
+    <section>
+        <ol class="container-list">
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/perifericos-productos/compragamer_Imganen_general_39628_Auriculares_Logitech_Astro_A50_X_Wireless_Lighstpeed_Black_89054f8c-grn.jpg" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Auriculares Logitech Astro A50 X Wireless Lighstpeed Black
+                    </div>
+                    <div class="price-notebook">
+                        $589.990
+                    </div>
+                </div>
+            </li>
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/perifericos-productos/compragamer_Imganen_general_39736_Teclado_Mecanico_Logitech_PRO_X_RGB_TKL_Wireless_Lightspeed_Black_68b861f3-grn.jpg" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Teclado Mecanico Logitech PRO X RGB TKL Wireless Lightspeed Black
+                    </div>
+                    <div class="price-notebook">
+                        $235.990
+                    </div>
+                </div>
+            </li>
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/perifericos-productos/compragamer_Imganen_general_23232_Auriculares_ASUS_ROG_Theta_7.1_USB-C_Aura_Sync_RGB_6640fae2-grn.jpg" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Auriculares ASUS ROG Theta 7.1 USB-C Aura Sync RGB
+                    </div>
+                    <div class="price-notebook">
+                        $546.990
+                    </div>
+                </div>
+            </li>
+            
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/perifericos-productos/compragamer_Imganen_general_38891_Mouse_ASUS_ROG_Strix_P711_Gladius_III_Aimpoint_Bluetooth_Wireless_36.000DPI_3670a7fd-grn.jpg" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Mouse ASUS ROG Strix P711 Gladius III Aimpoint Bluetooth Wireless 36.000DPI
+                    </div>
+                    <div class="price-notebook">
+                        $139.950
+                    </div>
+                </div>
+            </li>
+            <li class="container-product-card">
+                <div class="img-product">
+                    <img src="../assets/perifericos-productos/compragamer_Imganen_general_39197_Micr__fono_HyperX_QuadCast_Streaming_Condensador_USB_PC-PS4_bd34ac6c-grn.jpg" alt="nb1">
+                </div>
+                <div>
+                    <div class="tittle-product">
+                        Micrófono HyperX QuadCast Streaming Condensador USB PC-PS4
+                    </div>
+                    <div class="price-notebook">
+                        $167.530
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menuBar = document.querySelector('.container-bar');
+            menuBar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
