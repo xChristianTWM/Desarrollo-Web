@@ -1,4 +1,3 @@
-/* Sobrescribe o añade estilos específicos para la página de notebooks */
 body {
     background-color: #f0f0f0;
 }
@@ -9,12 +8,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container-list li {
-    margin: 10px 20%; /* Añade margen vertical entre elementos li */
+    margin: 10px 20%;
 }
 
 .container-product-card {
@@ -53,7 +52,6 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
     .container-product-card {
         grid-template-columns: 1fr;
