@@ -10,6 +10,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .menu-bar {
@@ -19,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .container-bar {
@@ -123,22 +125,31 @@ body {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1405px) {
+    .container-bar {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1240px) {
+    .container-bar {
+        gap: 2rem;
+    }
+}
+
+
+@media (max-width: 830px) {
     .container-bar {
         flex-direction: column;
         gap: 1rem;
         display: none;
     }
 
-    .menu-bar {
-        flex-direction: column;
+    .container-bar.active {
+        display: flex;
     }
 
     .menu-toggle {
         display: block;
-    }
-
-    .menu-bar.active .container-bar {
-        display: flex;
     }
 }
