@@ -5,24 +5,49 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: black;
 }
 
 .menu-bar {
     color: white;
     width: 100%;
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .container-bar {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 7rem;
 }
 
-.menu:hover {
-    cursor: pointer;
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu-bar a {
+    color: white; /* Color de texto blanco para enlaces */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    padding: 10px 15px; /* Añade un padding para mejorar la usabilidad */
+    transition: color 0.3s; /* Transición suave del color al pasar el ratón */
+}
+
+.menu a:hover {
+    color: #f0f0f0; /* Cambia el color al pasar el ratón */
+}
+
+.menu.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f0f0f0;
 }
 
 .text-destacado {
@@ -53,11 +78,17 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .cards img {
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 100px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -84,4 +115,15 @@ body {
     margin: auto;
     background-color: rgb(49, 49, 112);
     color: white;
+}
+
+@media (max-width: 768px) {
+    .container-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
 }
