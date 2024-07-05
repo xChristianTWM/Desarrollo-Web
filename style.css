@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400');
 
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +12,28 @@
 }
 
 body {
+    margin: 0;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    padding-bottom: 100px;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: black;
-    overflow-x: hidden;
+    color: white;
+    text-align: center;
+
+}
+
+.footer p {
+    margin: 5px 0;
 }
 
 .menu-bar {
