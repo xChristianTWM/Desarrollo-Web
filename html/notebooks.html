@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../style/lista-productos.css">
+    <link rel="stylesheet" href="../style/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,6 @@
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <div class="container-bar">
             <a href="../index.html">Inicio</a>
-            <a href="armar.html">Armá tu PC</a>
             <a href="pcarmada.html">PC Armadas</a>
             <a href="hardware.html">Hardware</a>
             <a href="perifericos.html">Periféricos</a>
@@ -26,6 +24,88 @@
             <a href="monitores.html">Monitores</a>
         </div>
     </div>
+
+    <aside class="left-column">
+        <div class="filter-section">
+            <span class="filter-title">Marca</span>
+            <div>
+                <label><input type="checkbox" name="brand" value="AMD"> AMD</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="brand" value="Intel"> Intel</label>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-title">Almacenamiento</span>
+            <div>
+                <label><input type="checkbox" name="storage" value="1TB"> 1TB</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="storage" value="512GB"> 512GB</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="storage" value="256GB"> 256GB</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="storage" value="128GB"> 128GB</label>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-title">Formato de almacenamiento</span>
+            <div>
+                <label><input type="checkbox" name="storage-format" value="SSD"> SSD</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="storage-format" value="HDD"> HDD</label>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-title">Procesador</span>
+            <div>
+                <label><input type="checkbox" name="processor" value="i3"> i3</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="processor" value="i5"> i5</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="processor" value="i7"> i7</label>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-title">Memoria RAM</span>
+            <div>
+                <label><input type="checkbox" name="ram" value="4GB"> 4GB</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ram" value="8GB"> 8GB</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ram" value="16GB"> 16GB</label>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-title">Resolución</span>
+            <div>
+                <label><input type="checkbox" name="resolution" value="1080p"> 1080p</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="resolution" value="4K"> 4K</label>
+            </div>
+        </div>
+        <div class="filter-section">
+            <span class="filter-title">Tamaño de pantalla</span>
+            <div>
+                <label><input type="checkbox" name="screen-size" value="14"> 14"</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="screen-size" value="15.6"> 15.6"</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="screen-size" value="17"> 17"</label>
+            </div>
+        </div>
+    </aside>
+    
 
     <section>
         <ol class="container-list">

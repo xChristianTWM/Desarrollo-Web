@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400');
 
-html{
-    position: relative;
-    min-height: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -18,23 +18,6 @@ body {
     padding-bottom: 100px;
 }
 
-.content {
-    flex: 1;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-
-}
-
-.footer p {
-    margin: 5px 0;
-}
 
 .menu-bar {
     color: white;
@@ -67,19 +50,6 @@ body {
     transition: color 0.3s;
 }
 
-.menu a:hover {
-    color: #f0f0f0;
-}
-
-.menu.active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #f0f0f0;
-}
 
 .text-destacado {
     padding: 40px;

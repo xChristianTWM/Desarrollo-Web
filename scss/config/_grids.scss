@@ -1,0 +1,61 @@
+@mixin flex-center-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin transition($properties, $duration) {
+  transition: $properties $duration;
+}
+
+.container-list {
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include flex-center-column;
+
+  li {
+      margin: 10px 20%;
+  }
+}
+
+.container-product-card {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  background-color: white;
+  margin: 10%;
+  padding: 20px;
+  border-radius: 8px;
+  @include box-shadow(0, 4px, 8px, rgba(0, 0, 0, 0.1));
+  align-items: center;
+
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+  }
+
+  .tittle-product {
+      font-size: 18px;
+      color: #333;
+  }
+
+  .price-notebook {
+      font-size: 24px;
+      color: #007bff;
+      margin-top: 10px;
+  }
+
+  &:hover {
+      cursor: pointer;
+      @include box-shadow(0, 12px, 24px, rgba(0, 0, 0, 0.2));
+      transform: translateY(-10px);
+      @include transition(transform 0.3s, box-shadow 0.3s);
+  }
+}
