@@ -16,6 +16,24 @@ body {
   padding-bottom: 100px;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.left-column {
+  width: 250px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+
+section {
+  flex-grow: 1;
+  padding: 20px;
+}
+
 .container-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -197,6 +215,15 @@ body {
     width: 100px;
     margin: 0 auto;
   }
-}
 
-/*# sourceMappingURL=main.css.map */
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-column {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+}
