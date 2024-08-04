@@ -1,0 +1,32 @@
+.brands-container {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+
+    > div:first-child {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+
+.logo-circle {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+        background-color: black;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding: 7px; // Reducción de padding
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}

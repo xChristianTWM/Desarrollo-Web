@@ -16,24 +16,6 @@ body {
   padding-bottom: 100px;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.left-column {
-  width: 250px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-right: 1px solid #ddd;
-}
-
-section {
-  flex-grow: 1;
-  padding: 20px;
-}
-
 .container-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -93,7 +75,7 @@ section {
 .menu-bar {
   color: white;
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -143,7 +125,7 @@ section {
 
 .text-destacado {
   padding: 40px;
-  font-family: "Manrope", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
   color: black;
   text-align: center;
@@ -215,15 +197,107 @@ section {
     width: 100px;
     margin: 0 auto;
   }
-
-  .main-container {
-    flex-direction: column;
-  }
-
-  .left-column {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-  }
 }
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.left-column {
+  flex: 0 0 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.right-column {
+  flex: 1;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter-section div {
+  margin-bottom: 10px;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-product-card {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.img-product img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.tittle-product {
+  font-weight: bold;
+}
+
+.price-notebook {
+  color: #d9534f;
+}
+
+.brands-container {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+.brands-container > div:first-child {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.logo-circle {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.logo-circle img {
+  background-color: black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 7px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+.logo-circle img:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=main.css.map */
