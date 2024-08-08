@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web destinado a la venta de componentes de PC">
+    <meta name="keywords" content="PC, HARDWARE, SOFTWARE, NOTEBOOKS">
+    <meta name="author" content="ChristianTWM">
     <link rel="stylesheet" href="../style/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,99 +16,107 @@
 </head>
 <body>
 
-    <div class="menu-bar">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <div class="container-bar">
-            <a href="../index.html">Inicio</a>
-            <a href="pcarmada.html">PC Armadas</a>
-            <a href="hardware.html">Hardware</a>
-            <a href="perifericos.html">Periféricos</a>
-            <a href="notebooks.html">Notebooks</a>
-            <a href="monitores.html">Monitores</a>
+    <header>
+        <div class="menu-bar">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="container-bar">
+                <a href="../index.html">Inicio</a>
+                <a href="pcarmada.html">PC Armadas</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="perifericos.html">Periféricos</a>
+                <a href="notebooks.html">Notebooks</a>
+                <a href="monitores.html">Monitores</a>
+            </div>
         </div>
+    </header>
+
+    <div class="text-destacado">
+        <h1>Notebooks</h1>
     </div>
 
 
-    <div class="main-container">
+    <main class="main-container">
         <aside class="left-column">
-            <div class="filter-section">
-                <span class="filter-title">Marca</span>
-                <div>
-                    <label><input type="checkbox" name="brand" value="AMD"> AMD</label>
+            <form>
+                <div class="filter-section">
+                    <span class="filter-title">Marca</span>
+                    <div>
+                        <label><input type="checkbox" name="brand" value="AMD"> AMD</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="brand" value="Intel"> Intel</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="brand" value="Intel"> Intel</label>
+                <div class="filter-section">
+                    <span class="filter-title">Almacenamiento</span>
+                    <div>
+                        <label><input type="checkbox" name="storage" value="1TB"> 1TB</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="storage" value="512GB"> 512GB</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="storage" value="256GB"> 256GB</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="storage" value="128GB"> 128GB</label>
+                    </div>
                 </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Almacenamiento</span>
-                <div>
-                    <label><input type="checkbox" name="storage" value="1TB"> 1TB</label>
+                <div class="filter-section">
+                    <span class="filter-title">Formato de almacenamiento</span>
+                    <div>
+                        <label><input type="checkbox" name="storage-format" value="SSD"> SSD</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="storage-format" value="HDD"> HDD</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="storage" value="512GB"> 512GB</label>
+                <div class="filter-section">
+                    <span class="filter-title">Procesador</span>
+                    <div>
+                        <label><input type="checkbox" name="processor" value="i3"> i3</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="processor" value="i5"> i5</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="processor" value="i7"> i7</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="storage" value="256GB"> 256GB</label>
+                <div class="filter-section">
+                    <span class="filter-title">Memoria RAM</span>
+                    <div>
+                        <label><input type="checkbox" name="ram" value="4GB"> 4GB</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="ram" value="8GB"> 8GB</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="ram" value="16GB"> 16GB</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="storage" value="128GB"> 128GB</label>
+                <div class="filter-section">
+                    <span class="filter-title">Resolución</span>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="1080p"> 1080p</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="4K"> 4K</label>
+                    </div>
                 </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Formato de almacenamiento</span>
-                <div>
-                    <label><input type="checkbox" name="storage-format" value="SSD"> SSD</label>
+                <div class="filter-section">
+                    <span class="filter-title">Tamaño de pantalla</span>
+                    <div>
+                        <label><input type="checkbox" name="screen-size" value="14"> 14"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="screen-size" value="15.6"> 15.6"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="screen-size" value="17"> 17"</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="storage-format" value="HDD"> HDD</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Procesador</span>
-                <div>
-                    <label><input type="checkbox" name="processor" value="i3"> i3</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="processor" value="i5"> i5</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="processor" value="i7"> i7</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Memoria RAM</span>
-                <div>
-                    <label><input type="checkbox" name="ram" value="4GB"> 4GB</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="ram" value="8GB"> 8GB</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="ram" value="16GB"> 16GB</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Resolución</span>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="1080p"> 1080p</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="4K"> 4K</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Tamaño de pantalla</span>
-                <div>
-                    <label><input type="checkbox" name="screen-size" value="14"> 14"</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="screen-size" value="15.6"> 15.6"</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="screen-size" value="17"> 17"</label>
-                </div>
-            </div>
+            </form>
         </aside>
         
 
@@ -113,7 +124,7 @@
             <ol class="container-list">
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/notebook-productos/D_NQ_NP_666597-MLU74197147493_012024-O.webp" alt="nb1">
+                        <img src="../assets/notebook-productos/D_NQ_NP_666597-MLU74197147493_012024-O.webp" alt="Notebook 14 Daewoo 64gb Ssd + 4gb Windows 100 Dw-n14gr3002 Color gris">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -126,7 +137,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/notebook-productos/D_NQ_NP_665091-MLU71423350274_092023-O.png" alt="nb1">
+                        <img src="../assets/notebook-productos/D_NQ_NP_665091-MLU71423350274_092023-O.png" alt="Notebook Acer Aspire 3 Core I3 N305 Ram 8gb Ssd 512gb W11h Color Plateado">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -139,7 +150,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/notebook-productos/D_NQ_NP_871152-MLU73177006087_112023-O.png" alt="nb1">
+                        <img src="../assets/notebook-productos/D_NQ_NP_871152-MLU73177006087_112023-O.png" alt="Notebook Cel lp1 14igl7 4g128ssd W1 Lenovo Color Gris">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -152,7 +163,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/notebook-productos/D_NQ_NP_763359-MLU75609085507_042024-O.png" alt="nb1">
+                        <img src="../assets/notebook-productos/D_NQ_NP_763359-MLU75609085507_042024-O.png" alt="Notebook Intel Core I3 8gb Ssd 256gb 14,1 Windows 11 Noblex Color Azul Oscuro">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -165,7 +176,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/notebook-productos/D_NQ_NP_689390-MLU72461143663_102023-O.png" alt="nb1">
+                        <img src="../assets/notebook-productos/D_NQ_NP_689390-MLU72461143663_102023-O.png" alt="Notebook Acer Core I3 Aspire 3 N305 8gb Ram 512ssd 15.6 W11 Color Plateado">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -178,12 +189,12 @@
                 </li>
             </ol>
         </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 NextMasterRace. Todos los derechos reservados.</p>
-            <p>Desarrollado por @ChristianTWM</p>
+            <p>Desarrollado por <a href="https://www.instagram.com/christian.twm/" target="_blank">@ChristianTWM</a></p>
         </div>
     </footer>
 

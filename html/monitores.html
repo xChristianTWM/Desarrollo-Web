@@ -3,162 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web destinado a la venta de componentes de PC">
+    <meta name="keywords" content="PC, HARDWARE, SOFTWARE, NOTEBOOKS">
+    <meta name="author" content="ChristianTWM">
     <link rel="stylesheet" href="../style/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <script src="../script.js"></script>
-    <title>NextMasterRace - Hardware</title>
+    <title>NextMasterRace - Monitores</title>
 </head>
 <body>
 
-    <div class="menu-bar">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <div class="container-bar">
-            <a href="../index.html">Inicio</a>
-            <a href="pcarmada.html">PC Armadas</a>
-            <a href="hardware.html">Hardware</a>
-            <a href="perifericos.html">Periféricos</a>
-            <a href="notebooks.html">Notebooks</a>
-            <a href="monitores.html">Monitores</a>
+    <header>
+        <div class="menu-bar">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="container-bar">
+                <a href="../index.html">Inicio</a>
+                <a href="pcarmada.html">PC Armadas</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="perifericos.html">Periféricos</a>
+                <a href="notebooks.html">Notebooks</a>
+                <a href="monitores.html">Monitores</a>
+            </div>
         </div>
+    </header>
+
+    <div class="text-destacado">
+        <h1>Monitores</h1>
     </div>
 
-    <div class="main-container">
+    <main class="main-container">
         <aside class="left-column">
-            <div class="filter-section">
-                <span class="filter-title">Marca</span>
-                <div>
-                    <label><input type="checkbox" name="brand" value="LG"> LG</label>
+            <form>
+                <div class="filter-section">
+                    <span class="filter-title">Marca</span>
+                    <div>
+                        <label><input type="checkbox" name="brand" value="LG"> LG</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="brand" value="Samsung"> Samsung</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="brand" value="ASUS"> ASUS</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="brand" value="AOC"> AOC</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="brand" value="Samsung"> Samsung</label>
+                <div class="filter-section">
+                    <span class="filter-title">Pulgadas</span>
+                    <div>
+                        <label><input type="checkbox" name="size" value="35"> 35"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="34"> 34"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="32"> 32"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="27"> 27"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="26"> 26"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="25"> 25"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="21"> 21"</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="size" value="19"> 19"</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="brand" value="ASUS"> ASUS</label>
+                <div class="filter-section">
+                    <span class="filter-title">Resolución Máxima</span>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="3840x2160"> 3840x2160</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="3440x1440"> 3440x1440</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="2560x1440"> 2560x1440</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="2560x1080"> 2560x1080</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="1920x1080"> 1920x1080</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="resolution" value="1366x768"> 1366x768</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="brand" value="AOC"> AOC</label>
+                <div class="filter-section">
+                    <span class="filter-title">Máxima frecuencia</span>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="240"> 240 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="180"> 180 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="170"> 170 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="160"> 160 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="144"> 144 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="100"> 100 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="75"> 75 Hz</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="refresh-rate" value="60"> 60 Hz</label>
+                    </div>
                 </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Pulgadas</span>
-                <div>
-                    <label><input type="checkbox" name="size" value="35"> 35"</label>
+                <div class="filter-section">
+                    <span class="filter-title">Tiempo de Respuesta</span>
+                    <div>
+                        <label><input type="checkbox" name="response-time" value="8ms"> 8 ms</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="response-time" value="6.5ms"> 6.5 ms</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="response-time" value="5ms"> 5 ms</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="response-time" value="4ms"> 4 ms</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="response-time" value="1ms"> 1 ms</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="34"> 34"</label>
+                <div class="filter-section">
+                    <span class="filter-title">Tipo de Panel</span>
+                    <div>
+                        <label><input type="checkbox" name="panel-type" value="IPS"> IPS</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="panel-type" value="VA"> VA</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="panel-type" value="NANO IPS"> NANO IPS</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="panel-type" value="TN"> TN</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="32"> 32"</label>
+                <div class="filter-section">
+                    <span class="filter-title">Pantalla Curva</span>
+                    <div>
+                        <label><input type="checkbox" name="curved" value="yes"> Sí</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="curved" value="no"> No</label>
+                    </div>
                 </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="27"> 27"</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="26"> 26"</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="25"> 25"</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="21"> 21"</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="size" value="19"> 19"</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Resolución Máxima</span>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="3840x2160"> 3840x2160</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="3440x1440"> 3440x1440</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="2560x1440"> 2560x1440</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="2560x1080"> 2560x1080</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="1920x1080"> 1920x1080</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="resolution" value="1366x768"> 1366x768</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Máxima frecuencia</span>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="240"> 240 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="180"> 180 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="170"> 170 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="160"> 160 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="144"> 144 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="100"> 100 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="75"> 75 Hz</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="refresh-rate" value="60"> 60 Hz</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Tiempo de Respuesta</span>
-                <div>
-                    <label><input type="checkbox" name="response-time" value="8ms"> 8 ms</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="response-time" value="6.5ms"> 6.5 ms</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="response-time" value="5ms"> 5 ms</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="response-time" value="4ms"> 4 ms</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="response-time" value="1ms"> 1 ms</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Tipo de Panel</span>
-                <div>
-                    <label><input type="checkbox" name="panel-type" value="IPS"> IPS</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="panel-type" value="VA"> VA</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="panel-type" value="NANO IPS"> NANO IPS</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="panel-type" value="TN"> TN</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <span class="filter-title">Pantalla Curva</span>
-                <div>
-                    <label><input type="checkbox" name="curved" value="yes"> Sí</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="curved" value="no"> No</label>
-                </div>
-            </div>
+            </form>
         </aside>
         <section>
             <ol class="container-list">
@@ -256,12 +267,12 @@
                 
             </ol>
         </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 NextMasterRace. Todos los derechos reservados.</p>
-            <p>Desarrollado por @ChristianTWM</p>
+            <p>Desarrollado por <a href="https://www.instagram.com/christian.twm/" target="_blank">@ChristianTWM</a></p>
         </div>
     </footer>
 

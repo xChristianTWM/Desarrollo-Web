@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web destinado a la venta de componentes de PC">
+    <meta name="keywords" content="PC, HARDWARE, SOFTWARE, NOTEBOOKS">
+    <meta name="author" content="ChristianTWM">
     <link rel="stylesheet" href="../style/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,107 +15,114 @@
     <title>NextMasterRace - Hardware</title>
 </head>
 <body>
-    <div class="menu-bar">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <div class="container-bar">
-            <a href="../index.html">Inicio</a>
-            <a href="pcarmada.html">PC Armadas</a>
-            <a href="hardware.html">Hardware</a>
-            <a href="perifericos.html">Periféricos</a>
-            <a href="notebooks.html">Notebooks</a>
-            <a href="monitores.html">Monitores</a>
+    <header>
+        <div class="menu-bar">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="container-bar">
+                <a href="../index.html">Inicio</a>
+                <a href="pcarmada.html">PC Armadas</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="perifericos.html">Periféricos</a>
+                <a href="notebooks.html">Notebooks</a>
+                <a href="monitores.html">Monitores</a>
+            </div>
         </div>
+    </header>
+
+    <div class="text-destacado">
+        <h1>Componentes</h1>
     </div>
 
-    <div class="main-container">
+    <main class="main-container">
         <aside class="left-column">
-            <button class="aside-toggle" onclick="toggleAside()">Filtros</button>
-            <div class="filter-content">
-                <div class="filter-section">
-                    <span class="filter-title">Marca</span>
-                    <div>
-                        <label><input type="checkbox" name="brand" value="AMD"> AMD</label>
+            <form>
+                <div class="filter-content">
+                    <div class="filter-section">
+                        <span class="filter-title">Marca</span>
+                        <div>
+                            <label><input type="checkbox" name="brand" value="AMD"> AMD</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="brand" value="Intel"> Intel</label>
+                        </div>
                     </div>
-                    <div>
-                        <label><input type="checkbox" name="brand" value="Intel"> Intel</label>
+                    <div class="filter-section">
+                        <span class="filter-title">Modelo</span>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Intel Core I9</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="1TB"> Intel Core I7</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="512GB"> Intel Core I5</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="256GB"> Intel Core I3</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 9</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 7</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 5</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 3</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Intel Celeron</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage" value="128GB"> Intel Pentium</label>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <span class="filter-title">Generación</span>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="SSD"> Intel 14 Gen</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Intel 13 Gen</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Intel 12 Gen</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Intel 11 Gen</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Intel 10 Gen</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 8000</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 7000</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 5000</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 4000</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 3000</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen Athlon</label>
+                        </div>
                     </div>
                 </div>
-                <div class="filter-section">
-                    <span class="filter-title">Modelo</span>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Intel Core I9</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="1TB"> Intel Core I7</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="512GB"> Intel Core I5</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="256GB"> Intel Core I3</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 9</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 7</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 5</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Amd Ryzen 3</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Intel Celeron</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage" value="128GB"> Intel Pentium</label>
-                    </div>
-                </div>
-                <div class="filter-section">
-                    <span class="filter-title">Generación</span>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="SSD"> Intel 14 Gen</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Intel 13 Gen</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Intel 12 Gen</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Intel 11 Gen</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Intel 10 Gen</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 8000</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 7000</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 5000</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 4000</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen 3000</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" name="storage-format" value="HDD"> Ryzen Athlon</label>
-                    </div>
-                </div>
-            </div>
+            </form>
         </aside>
         <section class="right-column">
             <ol class="container-list">
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/hardware-productos/compragamer_Imganen_general_38615_Procesador_Intel_Core_i9_14900K_6.0GHz_Turbo_Socket_1700_Raptor_Lake_82539926-grn.jpg" alt="nb1">
+                        <img src="../assets/hardware-productos/compragamer_Imganen_general_38615_Procesador_Intel_Core_i9_14900K_6.0GHz_Turbo_Socket_1700_Raptor_Lake_82539926-grn.jpg" alt="Procesador Intel Core i9 14900K">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -125,7 +135,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/hardware-productos/compragamer_Imganen_general_38613_Procesador_Intel_Core_i7_14700F_5.4GHz_Turbo_Socket_1700_Raptor_Lake_bd33c755-grn.jpg" alt="nb1">
+                        <img src="../assets/hardware-productos/compragamer_Imganen_general_38613_Procesador_Intel_Core_i7_14700F_5.4GHz_Turbo_Socket_1700_Raptor_Lake_bd33c755-grn.jpg" alt="Procesador Intel Core i7 14700F">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -138,7 +148,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/hardware-productos/compragamer_Imganen_general_34442_Procesador_AMD_Ryzen_9_7950X_5.7GHz_AM5_-_No_incluye_Cooler_-_C_Video_8693790f-grn.jpg" alt="nb1">
+                        <img src="../assets/hardware-productos/compragamer_Imganen_general_34442_Procesador_AMD_Ryzen_9_7950X_5.7GHz_AM5_-_No_incluye_Cooler_-_C_Video_8693790f-grn.jpg" alt="Procesador AMD Ryzen 9 7950X">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -151,7 +161,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/hardware-productos/compragamer_Imganen_general_38451_Procesador_AMD_Ryzen_7_8700G_5.1GHz_AM5_3204db96-grn.jpg" alt="nb1">
+                        <img src="../assets/hardware-productos/compragamer_Imganen_general_38451_Procesador_AMD_Ryzen_7_8700G_5.1GHz_AM5_3204db96-grn.jpg" alt="Procesador AMD Ryzen 7 8700G">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -164,7 +174,7 @@
                 </li>
                 <li class="container-product-card">
                     <div class="img-product">
-                        <img src="../assets/hardware-productos/compragamer_Imganen_general_31686_Procesador_AMD_Ryzen_5_5600_4.4GHz_Turbo___Wraith_Stealth_Cooler_4f696861-grn.jpg" alt="nb1">
+                        <img src="../assets/hardware-productos/compragamer_Imganen_general_31686_Procesador_AMD_Ryzen_5_5600_4.4GHz_Turbo___Wraith_Stealth_Cooler_4f696861-grn.jpg" alt="Procesador AMD Ryzen 5 5600">
                     </div>
                     <div>
                         <div class="tittle-product">
@@ -190,11 +200,11 @@
                 </li>
             </ol>
         </section>
-    </div>
+    </main>
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 NextMasterRace. Todos los derechos reservados.</p>
-            <p>Desarrollado por @ChristianTWM</p>
+            <p>Desarrollado por <a href="https://www.instagram.com/christian.twm/" target="_blank">@ChristianTWM</a></p>
         </div>
     </footer>
 
