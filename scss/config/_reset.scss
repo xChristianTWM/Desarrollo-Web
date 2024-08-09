@@ -13,8 +13,10 @@ html {
 
 body {
     margin: 0;
-    padding-bottom: 100px; // Espacio para el footer
-    background: url(../../assets/fondo/6416.jpg)
+    padding-bottom: 100px; 
+    // background: url(../../assets/fondo/6416.jpg)
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 // Footer Styles
@@ -36,7 +38,7 @@ body {
     margin: 0 auto;
 }
 
-// Main Container Adjustment
+
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -54,7 +56,7 @@ body {
     }
 }
 
-// Ensure the nav is always on top and visible
+
 .menu-bar {
     position: sticky;
     top: 0;
